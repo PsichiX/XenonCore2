@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}</ProjectGuid>
+    <RootNamespace>XenonFramework2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)-d</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>MEMORY_TRACING;MEMORY_TRACE_ALL</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Application\Crate.cpp" />
+    <ClCompile Include="Application\Game.cpp" />
+    <ClCompile Include="Application\Level.cpp" />
+    <ClCompile Include="Application\Loading.cpp" />
+    <ClCompile Include="Application\Logo.cpp" />
+    <ClCompile Include="Application\Menu.cpp" />
+    <ClCompile Include="Application\Player.cpp" />
+    <ClCompile Include="Application\PlayerBrain.cpp" />
+    <ClCompile Include="Application\TutorialAudio.cpp" />
+    <ClCompile Include="Application\TutorialBasic.cpp" />
+    <ClCompile Include="Application\TutorialEffects.cpp" />
+    <ClCompile Include="Application\TutorialParticle.cpp" />
+    <ClCompile Include="Application\TutorialRenderTechnique.cpp" />
+    <ClCompile Include="Application\TutorialSpritesAndText.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="XeCore\XenonCore2Loader.cpp" />
+    <ClCompile Include="XeFramework\ActorManager.cpp" />
+    <ClCompile Include="XeFramework\Asset.cpp" />
+    <ClCompile Include="XeFramework\AssetManager.cpp" />
+    <ClCompile Include="XeFramework\AudioManager.cpp" />
+    <ClCompile Include="XeFramework\Camera.cpp" />
+    <ClCompile Include="XeFramework\Camera2D.cpp" />
+    <ClCompile Include="XeFramework\Camera3D.cpp" />
+    <ClCompile Include="XeFramework\Canvas.cpp" />
+    <ClCompile Include="XeFramework\CanvasManager.cpp" />
+    <ClCompile Include="XeFramework\CollisionManager.cpp" />
+    <ClCompile Include="XeFramework\ControlManager.cpp" />
+    <ClCompile Include="XeFramework\Effect.cpp" />
+    <ClCompile Include="XeFramework\EffectManager.cpp" />
+    <ClCompile Include="XeFramework\Engine.cpp" />
+    <ClCompile Include="XeFramework\Font.cpp" />
+    <ClCompile Include="XeFramework\FontManager.cpp" />
+    <ClCompile Include="XeFramework\Global.cpp" />
+    <ClCompile Include="XeFramework\IActor.cpp" />
+    <ClCompile Include="XeFramework\ICollisional.cpp" />
+    <ClCompile Include="XeFramework\IControllable.cpp" />
+    <ClCompile Include="XeFramework\IController.cpp" />
+    <ClCompile Include="XeFramework\IGame.cpp" />
+    <ClCompile Include="XeFramework\InputManager.cpp" />
+    <ClCompile Include="XeFramework\IProgressState.cpp" />
+    <ClCompile Include="XeFramework\IRenderable.cpp" />
+    <ClCompile Include="XeFramework\IRtti.cpp" />
+    <ClCompile Include="XeFramework\IScene.cpp" />
+    <ClCompile Include="XeFramework\IState.cpp" />
+    <ClCompile Include="XeFramework\KernelEffects.cpp" />
+    <ClCompile Include="XeFramework\Logger.cpp" />
+    <ClCompile Include="XeFramework\Manager.cpp" />
+    <ClCompile Include="XeFramework\Material.cpp" />
+    <ClCompile Include="XeFramework\MaterialManager.cpp" />
+    <ClCompile Include="XeFramework\MemoryManager.cpp" />
+    <ClCompile Include="XeFramework\Music.cpp" />
+    <ClCompile Include="XeFramework\ParticlesStream.cpp" />
+    <ClCompile Include="XeFramework\RenderTechnique.cpp" />
+    <ClCompile Include="XeFramework\RuntimeDebugger.cpp" />
+    <ClCompile Include="XeFramework\SceneManager.cpp" />
+    <ClCompile Include="XeFramework\ShapePool.cpp" />
+    <ClCompile Include="XeFramework\Skeleton.cpp" />
+    <ClCompile Include="XeFramework\Sound.cpp" />
+    <ClCompile Include="XeFramework\SpriteBatch.cpp" />
+    <ClCompile Include="XeFramework\System.cpp" />
+    <ClCompile Include="XeFramework\Texture.cpp" />
+    <ClCompile Include="XeFramework\TextureManager.cpp" />
+    <ClCompile Include="XeFramework\UniVar.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Crate.h" />
+    <ClInclude Include="Application\Game.h" />
+    <ClInclude Include="Application\Level.h" />
+    <ClInclude Include="Application\Loading.h" />
+    <ClInclude Include="Application\Logo.h" />
+    <ClInclude Include="Application\Menu.h" />
+    <ClInclude Include="Application\PlayerBrain.h" />
+    <ClInclude Include="Application\Player.h" />
+    <ClInclude Include="Application\TutorialAudio.h" />
+    <ClInclude Include="Application\TutorialBasic.h" />
+    <ClInclude Include="Application\TutorialEffects.h" />
+    <ClInclude Include="Application\TutorialParticle.h" />
+    <ClInclude Include="Application\TutorialRenderTechnique.h" />
+    <ClInclude Include="Application\TutorialSpritesAndText.h" />
+    <ClInclude Include="XeFramework\ActorManager.h" />
+    <ClInclude Include="XeFramework\Asset.h" />
+    <ClInclude Include="XeFramework\AssetManager.h" />
+    <ClInclude Include="XeFramework\AudioManager.h" />
+    <ClInclude Include="XeFramework\Base.h" />
+    <ClInclude Include="XeFramework\BoolPool.h" />
+    <ClInclude Include="XeFramework\Camera.h" />
+    <ClInclude Include="XeFramework\Camera2D.h" />
+    <ClInclude Include="XeFramework\Camera3D.h" />
+    <ClInclude Include="XeFramework\Canvas.h" />
+    <ClInclude Include="XeFramework\CanvasManager.h" />
+    <ClInclude Include="XeFramework\CollisionManager.h" />
+    <ClInclude Include="XeFramework\ControlManager.h" />
+    <ClInclude Include="XeFramework\Effect.h" />
+    <ClInclude Include="XeFramework\EffectManager.h" />
+    <ClInclude Include="XeFramework\Engine.h" />
+    <ClInclude Include="XeFramework\Font.h" />
+    <ClInclude Include="XeFramework\FontManager.h" />
+    <ClInclude Include="XeFramework\Global.h" />
+    <ClInclude Include="XeFramework\IActor.h" />
+    <ClInclude Include="XeFramework\ICollisional.h" />
+    <ClInclude Include="XeFramework\IControllable.h" />
+    <ClInclude Include="XeFramework\IController.h" />
+    <ClInclude Include="XeFramework\IGame.h" />
+    <ClInclude Include="XeFramework\IItemsManager.h" />
+    <ClInclude Include="XeFramework\INamedItemsManager.h" />
+    <ClInclude Include="XeFramework\InputManager.h" />
+    <ClInclude Include="XeFramework\IProgressState.h" />
+    <ClInclude Include="XeFramework\IRenderable.h" />
+    <ClInclude Include="XeFramework\IRtti.h" />
+    <ClInclude Include="XeFramework\IScene.h" />
+    <ClInclude Include="XeFramework\IState.h" />
+    <ClInclude Include="XeFramework\KernelEffects.h" />
+    <ClInclude Include="XeFramework\Logger.h" />
+    <ClInclude Include="XeFramework\Manager.h" />
+    <ClInclude Include="XeFramework\Material.h" />
+    <ClInclude Include="XeFramework\MaterialManager.h" />
+    <ClInclude Include="XeFramework\MemoryManager.h" />
+    <ClInclude Include="XeFramework\Music.h" />
+    <ClInclude Include="XeFramework\ParticlesStream.h" />
+    <ClInclude Include="XeFramework\RenderTechnique.h" />
+    <ClInclude Include="XeFramework\RuntimeDebugger.h" />
+    <ClInclude Include="XeFramework\SceneManager.h" />
+    <ClInclude Include="XeFramework\ShapePool.h" />
+    <ClInclude Include="XeFramework\Singleton.h" />
+    <ClInclude Include="XeFramework\Skeleton.h" />
+    <ClInclude Include="XeFramework\Sound.h" />
+    <ClInclude Include="XeFramework\SpriteBatch.h" />
+    <ClInclude Include="XeFramework\Stack.h" />
+    <ClInclude Include="XeFramework\System.h" />
+    <ClInclude Include="XeFramework\Texture.h" />
+    <ClInclude Include="XeFramework\TextureManager.h" />
+    <ClInclude Include="XeFramework\UniVar.h" />
+    <ClInclude Include="XeFramework\XenonFramework2.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XeFramework\AssetManager.inl" />
+    <None Include="XeFramework\BoolPool.inl" />
+    <None Include="XeFramework\IItemsManager.inl" />
+    <None Include="XeFramework\INamedItemsManager.inl" />
+    <None Include="XeFramework\Logger.inl" />
+    <None Include="XeFramework\Singleton.inl" />
+    <None Include="XeFramework\Stack.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

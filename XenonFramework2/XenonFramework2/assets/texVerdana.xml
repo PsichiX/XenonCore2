@@ -1,0 +1,4 @@
+<Asset Type="Texture">
+	<Param Name="path" Value="data/textures/verdana.xet" />
+	<Param Name="filteringLevel" Value="1" />
+</Asset>

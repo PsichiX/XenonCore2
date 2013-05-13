@@ -1,0 +1,999 @@
+<Theme Name="Glass">
+
+	<Font Name="Verdana" TexFile="Resources/Fonts/verdana.xet" MapFile="Resources/Fonts/verdana.fnt" MinFilter="LINEAR" MagFilter="LINEAR" />
+	<Texture Name="Background" File="Resources/Gui/Glass/Background.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="REPEAT" WrapT="REPEAT" />
+	<Texture Name="BackgroundThick" File="Resources/Gui/Glass/BackgroundThick.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="REPEAT" WrapT="REPEAT" />
+	<Texture Name="Corners" File="Resources/Gui/Glass/Corners.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CornersRound" File="Resources/Gui/Glass/CornersRound.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CornersBlock" File="Resources/Gui/Glass/CornersBlock.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CheckOn" File="Resources/Gui/Glass/CheckOn.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CheckOff" File="Resources/Gui/Glass/CheckOff.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="OptionOn" File="Resources/Gui/Glass/OptionOn.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="OptionOff" File="Resources/Gui/Glass/OptionOff.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="Slider" File="Resources/Gui/Glass/Slider.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="Tri" File="Resources/Gui/Glass/Tri.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CaptionButtonClose" File="Resources/Gui/Glass/CaptionButtonClose.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CaptionButtonFull" File="Resources/Gui/Glass/CaptionButtonFull.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	<Texture Name="CaptionButtonMin" File="Resources/Gui/Glass/CaptionButtonMin.png" MinFilter="LINEAR" MagFilter="LINEAR" WrapS="CLAMP" WrapT="CLAMP" />
+	
+	<Style Name="GlassPlane">
+		<AreaTexture Align="TOP-LEFT" Name="Corners" />
+		<AreaTexture Align="TOP-RIGHT" Name="Corners" />
+		<AreaTexture Align="BOTTOM-LEFT" Name="Corners" />
+		<AreaTexture Align="BOTTOM-RIGHT" Name="Corners" />
+		<AreaTexture Align="TOP" Name="Corners" />
+		<AreaTexture Align="BOTTOM" Name="Corners" />
+		<AreaTexture Align="LEFT" Name="Corners" />
+		<AreaTexture Align="RIGHT" Name="Corners" />
+		<AreaTexture Align="MIDDLE" Name="Background" />
+		<AreaCoords Align="TOP-LEFT">
+			<0 Value="0.0:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="TOP-RIGHT">
+			<0 Value="0.5:0.0" />
+			<1 Value="1.0:0.0" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.0:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="TOP">
+			<0 Value="0.5:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="MIDDLE" Tiled="512:512" />
+		<AreaSplit>
+			<Top Value="8" />
+			<Bottom Value="8" />
+			<Left Value="8" />
+			<Right Value="8" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="EyePlane">
+		<AreaTexture Align="TOP-LEFT" Name="CornersRound" />
+		<AreaTexture Align="TOP-RIGHT" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM-LEFT" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM-RIGHT" Name="CornersRound" />
+		<AreaTexture Align="TOP" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM" Name="CornersBlock" />
+		<AreaTexture Align="LEFT" Name="CornersBlock" />
+		<AreaTexture Align="RIGHT" Name="CornersBlock" />
+		<AreaTexture Align="MIDDLE" Name="CornersBlock" />
+		<AreaCoords Align="TOP-LEFT">
+			<0 Value="0.0:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="TOP-RIGHT">
+			<0 Value="0.5:0.0" />
+			<1 Value="1.0:0.0" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.0:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="TOP">
+			<0 Value="0.5:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="MIDDLE">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaSplit>
+			<Top Value="16" />
+			<Bottom Value="16" />
+			<Left Value="16" />
+			<Right Value="16" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="RoundPlane">
+		<AreaTexture Align="TOP-LEFT" Name="CornersRound" />
+		<AreaTexture Align="TOP-RIGHT" Name="CornersRound" />
+		<AreaTexture Align="BOTTOM-LEFT" Name="CornersRound" />
+		<AreaTexture Align="BOTTOM-RIGHT" Name="CornersRound" />
+		<AreaTexture Align="TOP" Name="CornersRound" />
+		<AreaTexture Align="BOTTOM" Name="CornersRound" />
+		<AreaTexture Align="LEFT" Name="CornersRound" />
+		<AreaTexture Align="RIGHT" Name="CornersRound" />
+		<AreaTexture Align="MIDDLE" Name="CornersRound" />
+		<AreaCoords Align="TOP-LEFT">
+			<0 Value="0.0:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="TOP-RIGHT">
+			<0 Value="0.5:0.0" />
+			<1 Value="1.0:0.0" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.0:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="TOP">
+			<0 Value="0.5:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="MIDDLE">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaSplit>
+			<Top Value="16" />
+			<Bottom Value="16" />
+			<Left Value="16" />
+			<Right Value="16" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="BlockPlane">
+		<AreaTexture Align="TOP-LEFT" Name="CornersBlock" />
+		<AreaTexture Align="TOP-RIGHT" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM-LEFT" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM-RIGHT" Name="CornersBlock" />
+		<AreaTexture Align="TOP" Name="CornersBlock" />
+		<AreaTexture Align="BOTTOM" Name="CornersBlock" />
+		<AreaTexture Align="LEFT" Name="CornersBlock" />
+		<AreaTexture Align="RIGHT" Name="CornersBlock" />
+		<AreaTexture Align="MIDDLE" Name="CornersBlock" />
+		<AreaCoords Align="TOP-LEFT">
+			<0 Value="0.0:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="TOP-RIGHT">
+			<0 Value="0.5:0.0" />
+			<1 Value="1.0:0.0" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM-LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.0:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="TOP">
+			<0 Value="0.5:0.0" />
+			<1 Value="0.5:0.0" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="BOTTOM">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:1.0" />
+			<3 Value="0.5:1.0" />
+		</AreaCoords>
+		<AreaCoords Align="LEFT">
+			<0 Value="0.0:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.0:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="RIGHT">
+			<0 Value="0.5:0.5" />
+			<1 Value="1.0:0.5" />
+			<2 Value="1.0:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaCoords Align="MIDDLE">
+			<0 Value="0.5:0.5" />
+			<1 Value="0.5:0.5" />
+			<2 Value="0.5:0.5" />
+			<3 Value="0.5:0.5" />
+		</AreaCoords>
+		<AreaSplit>
+			<Top Value="16" />
+			<Bottom Value="16" />
+			<Left Value="16" />
+			<Right Value="16" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="WindowAreaActive" Inherit="GlassPlane" />
+	
+	<Style Name="WindowAreaUnactive" Inherit="WindowAreaActive">
+		<AreaColorFilter Value="0:0:0" />
+	</Style>
+	
+	<Style Name="WindowAreaBarActive" Inherit="GlassPlane" >
+		<AreaTexture Align="TOP" Name="" />
+		<AreaSplit>
+			<Top Value="0" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="WindowAreaBarUnactive" Inherit="WindowAreaBarActive">
+		<AreaColorFilter Value="0:0:0" />
+	</Style>
+	
+	<Style Name="WindowBarActive" Inherit="GlassPlane" >
+		<AreaTexture Align="BOTTOM" Name="" />
+		<AreaCoords Align="MIDDLE" Offset="0:-24"  />
+		<AreaSplit>
+			<Bottom Value="0" />
+		</AreaSplit>
+		<IconRect>
+			<0 Value="4:0" />
+			<1 Value="28:0" />
+			<2 Value="28:24" />
+			<3 Value="4:24" />
+		</IconRect>
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextHalign Mode="LEFT" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="32:12" />
+		<TextScale Value="0.5:0.5" />
+		<TextBorder Color="1:1:1:0.5" Size="2" Quality="2" />
+	</Style>
+	
+	<Style Name="WindowBarUnactive" Inherit="WindowBarActive">
+		<AreaColorFilter Value="0:0:0" />
+	</Style>
+	
+	<Style Name="PopupAreaActive" Inherit="WindowAreaActive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="PopupAreaUnactive" Inherit="WindowAreaUnactive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="PopupAreaBarActive" Inherit="WindowAreaBarActive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="PopupAreaBarUnactive" Inherit="WindowAreaBarUnactive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="PopupBarActive" Inherit="WindowBarActive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="PopupBarUnactive" Inherit="WindowBarUnactive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaColors>
+			<0 Value="1:1:1:0.8" />
+			<1 Value="1:1:1:0.8" />
+			<2 Value="1:1:1:0.8" />
+			<3 Value="1:1:1:0.8" />
+		</AreaColors>
+	</Style>
+
+	<Style Name="CaptionButtonActive" Inherit="GlassPlane">
+		<AreaTexture Name="" />
+		<AreaColors Align="TOP-LEFT">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:0" />
+			<3 Value="1:1:1:0" />
+		</AreaColors>
+		<AreaColors Align="TOP">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:0" />
+			<3 Value="1:1:1:0" />
+		</AreaColors>
+		<AreaColors Align="TOP-RIGHT">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:0" />
+			<3 Value="1:1:1:0" />
+		</AreaColors>
+		<AreaColors Align="LEFT">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:1" />
+			<3 Value="1:1:1:1" />
+		</AreaColors>
+		<AreaColors Align="MIDDLE">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:0.25" />
+			<3 Value="1:1:1:0.25" />
+		</AreaColors>
+		<AreaColors Align="RIGHT">
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:1" />
+			<3 Value="1:1:1:1" />
+		</AreaColors>
+	</Skin>
+	
+	<Style Name="CaptionButtonUnactive" Inherit="CaptionButtonActive">
+		<AreaColorFilter Value="0:0:0" />
+	</Style>
+
+	<Style Name="CaptionButtonClose">
+		<AreaTexture Name="CaptionButtonClose" />
+	</Style>
+	
+	<Style Name="CaptionButtonFull">
+		<AreaTexture Name="CaptionButtonFull" />
+	</Style>
+	
+	<Style Name="CaptionButtonMin">
+		<AreaTexture Name="CaptionButtonMin" />
+	</Style>
+
+	<Style Name="ButtonActive" Inherit="EyePlane">
+		<AreaColors Align="TOP-LEFT">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1:0.7" />
+			<3 Value="1:1:1:0.7" />
+		</AreaColors>
+		<AreaColors Align="TOP">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1:0.7" />
+			<3 Value="1:1:1:0.7" />
+		</AreaColors>
+		<AreaColors Align="TOP-RIGHT">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1:0.7" />
+			<3 Value="1:1:1:0.7" />
+		</AreaColors>
+		<AreaColors Align="LEFT">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaColors Align="MIDDLE">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaColors Align="RIGHT">
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaColorFilter Value="1:1:1:0.85" />
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextHalign Mode="CENTER" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="240:32" />
+		<TextScale Value="1:1" />
+	</Style>
+	
+	<Style Name="ButtonUnactive" Inherit="ButtonActive">
+		<AreaColorFilter Value="0.25:0.25:0.25" />
+		<TextColor Value="0.5:0.5:0.5" />
+	</Style>
+	
+	<Style Name="ButtonOver" Inherit="EyePlane">
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextHalign Mode="CENTER" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="240:32" />
+		<TextScale Value="1:1" />
+	</Style>
+	
+	<Style Name="ScrollArea" Inherit="GlassPlane">
+		<AreaTexture Name="" />
+		<AreaColors>
+			<0 Value="0:0:0:0.7" />
+			<1 Value="0:0:0:0.7" />
+			<2 Value="0:0:0:0.5" />
+			<3 Value="0:0:0:0.5" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="ScrollBarBackH" Inherit="RoundPlane">
+		<AreaColorFilter Value="0.4:0.4:0.4:0.9" />
+		<AreaSplit>
+			<Top Value="8" />
+			<Bottom Value="8" />
+			<Left Value="8" />
+			<Right Value="8" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="ScrollBarFrontActiveH" Inherit="EyePlane">
+		<AreaColorFilter Value="1:1:1:0.9" />
+		<AreaSplit>
+			<Top Value="12" />
+			<Bottom Value="12" />
+			<Left Value="12" />
+			<Right Value="12" />
+		</AreaSplit>
+	</Style>
+	
+	<Style Name="ScrollBarFrontUnactiveH" Inherit="ScrollBarFrontActiveH">
+		<AreaColorFilter Value="0.5:0.5:0.5:0.9" />
+	</Style>
+	
+	<Style Name="ScrollBarBackV" Inherit="ScrollBarBackH" />
+	
+	<Style Name="ScrollBarFrontActiveV" Inherit="ScrollBarFrontActiveH" />
+	
+	<Style Name="ScrollBarFrontUnactiveV" Inherit="ScrollBarFrontUnactiveH" />
+	
+	<Style Name="ProgressArea" Inherit="BlockPlane">
+		<AreaColorFilter Value="0.3:0.3:0.3" />
+	</Style>
+	
+	<Style Name="ProgressBarActive">
+		<AreaTexture Name="BackgroundThick" />
+		<AreaCoords Tiled="128:128" />
+		<AreaColors>
+			<0 Value="1:0.75:0" />
+			<1 Value="1:0.75:0" />
+			<2 Value="1:0.25:0" />
+			<3 Value="1:0.25:0" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="ProgressBarUnactive" Inherit="ProgressBarActive">
+		<AreaColors>
+			<0 Value="0.75:0.75:0.75" />
+			<1 Value="0.75:0.75:0.75" />
+			<2 Value="0.25:0.25:0.25" />
+			<3 Value="0.25:0.25:0.25" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="ListCellActive" Inherit="RoundPlane">
+		<AreaSplit>
+			<Top Value="12" />
+			<Bottom Value="12" />
+			<Left Value="12" />
+			<Right Value="12" />
+		</AreaSplit>
+		<AreaColorFilter Value="1:1:1:0.75" />
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="16:16" />
+		<TextScale Value="0.5:0.5" />
+	</Style>
+	
+	<Style Name="ListCellUnactive" Inherit="ListCellActive">
+		<AreaColorFilter Value="0.5:0.5:0.5:1" />
+		<TextColor Value="0.2:0.2:0.2" />
+	</Style>
+	
+	<Style Name="ListCellOver" Inherit="ListCellActive">
+		<AreaColorFilter Value="1:1:1:1" />
+	</Style>
+	
+	<Style Name="ListCellSelected" Inherit="ListCellActive">
+		<AreaColorFilter Value="0.2:0.2:0.2:1" />
+		<TextColor Value="1:1:1" />
+	</Style>
+	
+	<Style Name="CheckArea" Inherit="GlassPlane">
+		<AreaTexture Name="" />
+		<AreaColors>
+			<0 Value="0:0:0:0.4" />
+			<1 Value="0:0:0:0.4" />
+			<2 Value="0:0:0:0.6" />
+			<3 Value="0:0:0:0.6" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="CheckCellActive">
+		<AreaColors>
+			<0 Value="0:0:0:0" />
+			<1 Value="0:0:0:0" />
+			<2 Value="0:0:0:0" />
+			<3 Value="0:0:0:0" />
+		</AreaColors>
+		<TextColor Value="1:1:1" />
+		<TextFont Name="Verdana" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="40:16" />
+		<TextScale Value="0.5:0.5" />
+	</Style>
+	
+	<Style Name="CheckCellUnactive" Inherit="CheckCellActive">
+		<TextColor Value="0.5:0.5:0.5" />
+	</Style>
+	
+	<Style Name="CheckCellActiveOn">
+		<AreaColors>
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaTexture Name="CheckOn" />
+	</Style>
+	
+	<Style Name="CheckCellUnactiveOn">
+		<AreaColors>
+			<0 Value="0.5:0.5:0.5:0.7" />
+			<1 Value="0.5:0.5:0.5:0.7" />
+			<2 Value="0.5:0.5:0.5" />
+			<3 Value="0.5:0.5:0.5" />
+		</AreaColors>
+		<AreaTexture Name="CheckOn" />
+	</Style>
+	
+	<Style Name="CheckCellActiveOff">
+		<AreaColors>
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaTexture Name="CheckOff" />
+	</Style>
+	
+	<Style Name="CheckCellUnactiveOff">
+		<AreaColors>
+			<0 Value="0.5:0.5:0.5:0.7" />
+			<1 Value="0.5:0.5:0.5:0.7" />
+			<2 Value="0.5:0.5:0.5" />
+			<3 Value="0.5:0.5:0.5" />
+		</AreaColors>
+		<AreaTexture Name="CheckOff" />
+	</Style>
+	
+	<Style Name="OptionArea" Inherit="GlassPlane">
+		<AreaTexture Name="" />
+		<AreaColors>
+			<0 Value="0:0:0:0.4" />
+			<1 Value="0:0:0:0.4" />
+			<2 Value="0:0:0:0.6" />
+			<3 Value="0:0:0:0.6" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="OptionCellActive">
+		<AreaColors>
+			<0 Value="0:0:0:0" />
+			<1 Value="0:0:0:0" />
+			<2 Value="0:0:0:0" />
+			<3 Value="0:0:0:0" />
+		</AreaColors>
+		<TextColor Value="1:1:1" />
+		<TextFont Name="Verdana" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="40:16" />
+		<TextScale Value="0.5:0.5" />
+	</Style>
+	
+	<Style Name="OptionCellUnactive" Inherit="OptionCellActive">
+		<TextColor Value="0.5:0.5:0.5" />
+	</Style>
+	
+	<Style Name="OptionCellActiveOn">
+		<AreaColors>
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaTexture Name="OptionOn" />
+	</Style>
+	
+	<Style Name="OptionCellUnactiveOn">
+		<AreaColors>
+			<0 Value="0.5:0.5:0.5:0.7" />
+			<1 Value="0.5:0.5:0.5:0.7" />
+			<2 Value="0.5:0.5:0.5" />
+			<3 Value="0.5:0.5:0.5" />
+		</AreaColors>
+		<AreaTexture Name="OptionOn" />
+	</Style>
+	
+	<Style Name="OptionCellActiveOff">
+		<AreaColors>
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1" />
+			<3 Value="1:1:1" />
+		</AreaColors>
+		<AreaTexture Name="OptionOff" />
+	</Style>
+	
+	<Style Name="OptionCellUnactiveOff">
+		<AreaColors>
+			<0 Value="0.5:0.5:0.5:0.7" />
+			<1 Value="0.5:0.5:0.5:0.7" />
+			<2 Value="0.5:0.5:0.5" />
+			<3 Value="0.5:0.5:0.5" />
+		</AreaColors>
+		<AreaTexture Name="OptionOff" />
+	</Style>
+	
+	<Style Name="SliderArea">
+		<AreaColors>
+			<0 Value="0:0:0:0" />
+			<1 Value="0:0:0:0" />
+			<2 Value="0:0:0:0" />
+			<3 Value="0:0:0:0" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="SliderBarH" Inherit="RoundPlane">
+		<AreaColorFilter Value="0.3:0.3:0.3:0.9" />
+	</Style>
+	
+	<Style Name="SliderBarV" Inherit="SliderBarH" />
+	
+	<Style Name="SliderDragActive">
+		<AreaColors>
+			<0 Value="1:1:1" />
+			<1 Value="1:1:1" />
+			<2 Value="1:1:1:0.7" />
+			<3 Value="1:1:1:0.7" />
+		</AreaColors>
+		<AreaTexture Name="Slider" />
+	</Style>
+	
+	<Style Name="SliderDragUnactive">
+		<AreaColors>
+			<0 Value="0.5:0.5:0.5" />
+			<1 Value="0.5:0.5:0.5" />
+			<2 Value="0.5:0.5:0.5:0.7" />
+			<3 Value="0.5:0.5:0.5:0.7" />
+		</AreaColors>
+		<AreaTexture Name="Slider" />
+	</Style>
+	
+	<Style Name="MenuAreaActive" Inherit="RoundPlane">
+		<AreaColorFilter Value="1:1:1:0.9" />
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextOffset Value="16:16" />
+		<TextScale Value="1:1" />
+	</Style>
+	
+	<Style Name="MenuAreaUnactive" Inherit="MenuAreaActive">
+		<AreaColorFilter Value="0.5:0.5:0.5:0.8" />
+		<TextColor Value="0.35:0.35:0.35" />
+		<TextFont Name="Verdana" />
+		<TextOffset Value="16:16" />
+		<TextScale Value="1:1" />
+	</Style>
+	
+	<Style Name="MenuList">
+		<AreaColors>
+			<0 Value="0:0:0:0.2" />
+			<1 Value="0:0:0:0.2" />
+			<2 Value="0:0:0:0.4" />
+			<3 Value="0:0:0:0.4" />
+		</AreaColors>
+	</Style>
+	
+	<Style Name="Group" Inherit="GlassPlane">
+		<_AreaTexture Name="BackgroundThick" />
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextOffset Value="6:4" />
+		<TextScale Value="0.4:0.4" />
+	</Style>
+	
+	<Style Name="EditAreaActive" Inherit="BlockPlane">
+		<AreaColorFilter Value="0.3:0.3:0.3:0.9" />
+	</Style>
+	
+	<Style Name="EditAreaUnactive" Inherit="EditAreaActive">
+		<AreaColorFilter Value="0.1:0.1:0.1:0.9" />
+	</Style>
+	
+	<Style Name="EditBoxActive">
+		<AreaColors>
+			<0 Value="0:0:0:0" />
+			<1 Value="0:0:0:0" />
+			<2 Value="0:0:0:0" />
+			<3 Value="0:0:0:0" />
+		</AreaColors>
+		<TextColor Value="1:1:1" />
+		<TextFont Name="Verdana" />
+		<TextOffset Value="8:8" />
+		<TextScale Value="0.5:0.5" />
+	</Style>
+	
+	<Style Name="EditBoxUnactive" Inherit="EditBoxActive">
+		<TextColor Value="0.75:0.75:0.75:0.5" />
+	</Style>
+	
+	<Style Name="ComboAreaActive" Inherit="RoundPlane">
+		<AreaColorFilter Value="1:1:1:0.9" />
+		<TextColor Value="0:0:0" />
+		<TextFont Name="Verdana" />
+		<TextOffset Value="16:16" />
+		<TextScale Value="0.5:0.5" />
+	</Style>
+	
+	<Style Name="ComboAreaUnactive" Inherit="ComboAreaActive">
+		<AreaColorFilter Value="0.5:0.5:0.5:0.9" />
+		<TextColor Value="0.35:0.35:0.35" />
+	</Style>
+	
+	<Style Name="ComboIconActive">
+		<AreaColors>
+			<0 Value="1:1:1:0.7" />
+			<1 Value="1:1:1:0.7" />
+			<2 Value="1:1:1:0.9" />
+			<3 Value="1:1:1:0.9" />
+		</AreaColors>
+		<AreaTexture Name="Tri" />
+	</Style>
+	
+	<Style Name="ComboIconUnactive" Inherit="ComboIconActive">
+		<AreaColorFilter Value="0.5:0.5:0.5" />
+	</Style>
+
+	
+	
+	<Skin Name="Window">
+		<Style Control="AreaActive" Name="WindowAreaActive" />
+		<Style Control="AreaUnactive" Name="WindowAreaUnactive" />
+		<Style Control="AreaBarActive" Name="WindowAreaBarActive" />
+		<Style Control="AreaBarUnactive" Name="WindowAreaBarUnactive" />
+		<Style Control="BarActive" Name="WindowBarActive" />
+		<Style Control="BarUnactive" Name="WindowBarUnactive" />
+		<Style Control="ButtonActive" Name="CaptionButtonActive" />
+		<Style Control="ButtonUnactive" Name="CaptionButtonUnactive" />
+		<Style Control="ButtonClose" Name="CaptionButtonClose" />
+		<Style Control="ButtonFull" Name="CaptionButtonFull" />
+		<Style Control="ButtonMin" Name="CaptionButtonMin" />
+	</Skin>
+	
+	<Skin Name="Popup">
+		<Style Control="AreaActive" Name="PopupAreaActive" />
+		<Style Control="AreaUnactive" Name="PopupAreaUnactive" />
+		<Style Control="AreaBarActive" Name="PopupAreaBarActive" />
+		<Style Control="AreaBarUnactive" Name="PopupAreaBarUnactive" />
+		<Style Control="BarActive" Name="PopupBarActive" />
+		<Style Control="BarUnactive" Name="PopupBarUnactive" />
+		<Style Control="ButtonActive" Name="CaptionButtonActive" />
+		<Style Control="ButtonUnactive" Name="CaptionButtonUnactive" />
+		<Style Control="ButtonClose" Name="CaptionButtonClose" />
+		<Style Control="ButtonFull" Name="CaptionButtonFull" />
+		<Style Control="ButtonMin" Name="CaptionButtonMin" />
+	</Skin>
+	
+	<Skin Name="Button">
+		<Style Control="AreaActive" Name="ButtonActive" />
+		<Style Control="AreaUnactive" Name="ButtonUnactive" />
+		<Style Control="AreaOver" Name="ButtonOver" />
+	</Skin>
+	
+	<Skin Name="Scroll">
+		<Style Control="Area" Name="ScrollArea" />
+		<Style Control="BarBackH" Name="ScrollBarBackH" />
+		<Style Control="BarFrontActiveH" Name="ScrollBarFrontActiveH" />
+		<Style Control="BarFrontUnactiveH" Name="ScrollBarFrontUnactiveH" />
+		<Style Control="BarBackV" Name="ScrollBarBackV" />
+		<Style Control="BarFrontActiveV" Name="ScrollBarFrontActiveV" />
+		<Style Control="BarFrontUnactiveV" Name="ScrollBarFrontUnactiveV" />
+	</Skin>
+	
+	<Skin Name="Progress">
+		<Style Control="Area" Name="ProgressArea" />
+		<Style Control="BarActive" Name="ProgressBarActive" />
+		<Style Control="BarUnactive" Name="ProgressBarUnactive" />
+	</Skin>
+	
+	<Skin Name="List">
+		<Style Control="Area" Name="ScrollArea" />
+		<Style Control="BarBackH" Name="ScrollBarBackH" />
+		<Style Control="BarFrontActiveH" Name="ScrollBarFrontActiveH" />
+		<Style Control="BarFrontUnactiveH" Name="ScrollBarFrontUnactiveH" />
+		<Style Control="BarBackV" Name="ScrollBarBackV" />
+		<Style Control="BarFrontActiveV" Name="ScrollBarFrontActiveV" />
+		<Style Control="BarFrontUnactiveV" Name="ScrollBarFrontUnactiveV" />
+		<Style Control="CellActive" Name="ListCellActive" />
+		<Style Control="CellUnactive" Name="ListCellUnactive" />
+		<Style Control="CellOver" Name="ListCellOver" />
+		<Style Control="CellSelected" Name="ListCellSelected" />
+	</Skin>
+	
+	<Skin Name="Check">
+		<Style Control="Area" Name="CheckArea" />
+		<Style Control="CellActive" Name="CheckCellActive" />
+		<Style Control="CellUnactive" Name="CheckCellUnactive" />
+		<Style Control="CellActiveOn" Name="CheckCellActiveOn" />
+		<Style Control="CellActiveOff" Name="CheckCellActiveOff" />
+		<Style Control="CellUnactiveOn" Name="CheckCellUnactiveOn" />
+		<Style Control="CellUnactiveOff" Name="CheckCellUnactiveOff" />
+	</Skin>
+	
+	<Skin Name="Option">
+		<Style Control="Area" Name="OptionArea" />
+		<Style Control="CellActive" Name="OptionCellActive" />
+		<Style Control="CellUnactive" Name="OptionCellUnactive" />
+		<Style Control="CellActiveOn" Name="OptionCellActiveOn" />
+		<Style Control="CellActiveOff" Name="OptionCellActiveOff" />
+		<Style Control="CellUnactiveOn" Name="OptionCellUnactiveOn" />
+		<Style Control="CellUnactiveOff" Name="OptionCellUnactiveOff" />
+	</Skin>
+
+	<Skin Name="Slider">
+		<Style Control="Area" Name="SliderArea" />
+		<Style Control="BarH" Name="SliderBarH" />
+		<Style Control="BarV" Name="SliderBarV" />
+		<Style Control="DragActive" Name="SliderDragActive" />
+		<Style Control="DragUnactive" Name="SliderDragUnactive" />
+	</Skin>
+	
+	<Skin Name="Menu">
+		<Style Control="AreaActive" Name="MenuAreaActive" />
+		<Style Control="AreaUnactive" Name="MenuAreaUnactive" />
+		<Style Control="ListArea" Name="MenuList" />
+	</Skin>
+	
+	<Skin Name="Group">
+		<Style Control="Area" Name="Group" />
+	</Skin>
+	
+	<Skin Name="Edit">
+		<Style Control="AreaActive" Name="EditAreaActive" />
+		<Style Control="AreaUnactive" Name="EditAreaUnactive" />
+		<Style Control="BoxActive" Name="EditBoxActive" />
+		<Style Control="BoxUnactive" Name="EditBoxUnactive" />
+		<Style Control="BorderActive" Name="EditBorderActive" />
+		<Style Control="BorderUnactive" Name="EditBorderUnactive" />
+	</Skin>
+	
+	<Skin Name="Combo">
+		<Style Control="ButtonActive" Name="ComboAreaActive" />
+		<Style Control="ButtonUnactive" Name="ComboAreaUnactive" />
+		<Style Control="IconActive" Name="ComboIconActive" />
+		<Style Control="IconUnactive" Name="ComboIconUnactive" />
+		<Style Control="Area" Name="ScrollArea" />
+		<Style Control="BarBackH" Name="ScrollBarBackH" />
+		<Style Control="BarFrontActiveH" Name="ScrollBarFrontActiveH" />
+		<Style Control="BarFrontUnactiveH" Name="ScrollBarFrontUnactiveH" />
+		<Style Control="BarBackV" Name="ScrollBarBackV" />
+		<Style Control="BarFrontActiveV" Name="ScrollBarFrontActiveV" />
+		<Style Control="BarFrontUnactiveV" Name="ScrollBarFrontUnactiveV" />
+		<Style Control="CellActive" Name="ListCellActive" />
+		<Style Control="CellUnactive" Name="ListCellUnactive" />
+		<Style Control="CellOver" Name="ListCellOver" />
+	</Skin>
+	
+</Theme>

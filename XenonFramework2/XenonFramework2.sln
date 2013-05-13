@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C++ Express 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XenonFramework2", "XenonFramework2\XenonFramework2.vcxproj", "{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}.Debug|Win32.Build.0 = Debug|Win32
+		{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}.Release|Win32.ActiveCfg = Release|Win32
+		{CB9F10D0-1E6F-4976-8E64-C3ED73649CED}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

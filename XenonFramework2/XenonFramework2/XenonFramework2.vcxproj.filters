@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{e11129dc-4140-4116-9104-462eab3e6ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{46901184-e0b1-4039-9959-f9cdd6f4d44a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application">
+      <UniqueIdentifier>{5643200b-9ca5-4f17-89cf-a48e7c404839}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application">
+      <UniqueIdentifier>{2fa7579b-f1e1-49d1-bd58-8828f46a1929}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Graphics">
+      <UniqueIdentifier>{fc36b819-d393-4a46-a56f-b2e9d57aaab7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Misc">
+      <UniqueIdentifier>{31352de1-5f76-4bad-bb32-cb362f359b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Actors">
+      <UniqueIdentifier>{f2144114-f554-4dc0-92ce-5a625cee50f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Physics">
+      <UniqueIdentifier>{d9a1befc-aae7-49de-a49f-b8f03e4019b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Base">
+      <UniqueIdentifier>{9a1a9556-9b75-4918-88fb-ff9103333571}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Graphics">
+      <UniqueIdentifier>{c4cd2b8e-b819-442b-b4d2-ed827a93d37a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Misc">
+      <UniqueIdentifier>{51a1dfa6-c9ff-4850-9592-874c6169638f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Actors">
+      <UniqueIdentifier>{1c475bd7-671d-4ffe-8e08-3c13e8958d96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Base">
+      <UniqueIdentifier>{974c73f9-5f33-412d-9769-ba9114dde093}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Physics">
+      <UniqueIdentifier>{30b8c4ef-49d5-4680-bc10-f5ea64e3c2e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Audio">
+      <UniqueIdentifier>{eb03ed64-6a29-4cc7-821b-3a6d8e1bfc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Audio">
+      <UniqueIdentifier>{a3ad0fa6-3edf-44b1-b612-279f71fd418a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Graphics\Extended">
+      <UniqueIdentifier>{36706d11-3ebe-4f51-af94-0d0873f95938}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Graphics\Extended">
+      <UniqueIdentifier>{90f47bf6-5aff-4dd5-8626-a68c67cdfb43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\Tutorials">
+      <UniqueIdentifier>{6b6163e9-760b-4327-94d3-03cef1437412}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Tutorials">
+      <UniqueIdentifier>{f094e1e3-addd-4f0a-9870-06684ed219a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Application\Game">
+      <UniqueIdentifier>{5d53e683-b169-49e6-9628-4acff8c79982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Application\Game">
+      <UniqueIdentifier>{727cd93e-7f48-4b0a-bdb8-1eef475768af}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Game.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\ActorManager.cpp">
+      <Filter>Source Files\Framework\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Camera.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\CollisionManager.cpp">
+      <Filter>Source Files\Framework\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\ControlManager.cpp">
+      <Filter>Source Files\Framework\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Effect.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\EffectManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Engine.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Global.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IActor.cpp">
+      <Filter>Source Files\Framework\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\ICollisional.cpp">
+      <Filter>Source Files\Framework\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IControllable.cpp">
+      <Filter>Source Files\Framework\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IController.cpp">
+      <Filter>Source Files\Framework\Actors</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IGame.cpp">
+      <Filter>Source Files\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\InputManager.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IRenderable.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IRtti.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IScene.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IState.cpp">
+      <Filter>Source Files\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Logger.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Manager.cpp">
+      <Filter>Source Files\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Material.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\MaterialManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\MemoryManager.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\SceneManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\ShapePool.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\SpriteBatch.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeCore\XenonCore2Loader.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Font.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\FontManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\TextureManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Texture.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Asset.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\AssetManager.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Canvas.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\CanvasManager.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\System.cpp">
+      <Filter>Source Files\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\UniVar.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Sound.cpp">
+      <Filter>Source Files\Framework\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\AudioManager.cpp">
+      <Filter>Source Files\Framework\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Music.cpp">
+      <Filter>Source Files\Framework\Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Skeleton.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\KernelEffects.cpp">
+      <Filter>Source Files\Framework\Graphics\Extended</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\RenderTechnique.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Camera2D.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\RuntimeDebugger.cpp">
+      <Filter>Source Files\Framework\Base</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\Camera3D.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Menu.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialRenderTechnique.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialBasic.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Crate.cpp">
+      <Filter>Source Files\Application\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Level.cpp">
+      <Filter>Source Files\Application\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Logo.cpp">
+      <Filter>Source Files\Application\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Player.cpp">
+      <Filter>Source Files\Application\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\PlayerBrain.cpp">
+      <Filter>Source Files\Application\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialSpritesAndText.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\IProgressState.cpp">
+      <Filter>Source Files\Framework\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\Loading.cpp">
+      <Filter>Source Files\Application</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialAudio.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialEffects.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="Application\TutorialParticle.cpp">
+      <Filter>Source Files\Application\Tutorials</Filter>
+    </ClCompile>
+    <ClCompile Include="XeFramework\ParticlesStream.cpp">
+      <Filter>Source Files\Framework\Graphics</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Application\Game.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\ActorManager.h">
+      <Filter>Header Files\Framework\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\BoolPool.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Camera.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\CollisionManager.h">
+      <Filter>Header Files\Framework\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\ControlManager.h">
+      <Filter>Header Files\Framework\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Effect.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\EffectManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IActor.h">
+      <Filter>Header Files\Framework\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\ICollisional.h">
+      <Filter>Header Files\Framework\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IControllable.h">
+      <Filter>Header Files\Framework\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IController.h">
+      <Filter>Header Files\Framework\Actors</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IGame.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IItemsManager.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\INamedItemsManager.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IRenderable.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IScene.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IState.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Manager.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Material.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\MaterialManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\SceneManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\ShapePool.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\SpriteBatch.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Base.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Engine.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Global.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IRtti.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Logger.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Singleton.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\MemoryManager.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\InputManager.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\XenonFramework2.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Stack.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Font.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\FontManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\TextureManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Texture.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Asset.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\AssetManager.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Canvas.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\CanvasManager.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\System.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\UniVar.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Sound.h">
+      <Filter>Header Files\Framework\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\AudioManager.h">
+      <Filter>Header Files\Framework\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Music.h">
+      <Filter>Header Files\Framework\Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Skeleton.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\KernelEffects.h">
+      <Filter>Header Files\Framework\Graphics\Extended</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\RenderTechnique.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Camera2D.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\RuntimeDebugger.h">
+      <Filter>Header Files\Framework\Base</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\Camera3D.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Menu.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialRenderTechnique.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialBasic.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Crate.h">
+      <Filter>Header Files\Application\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Level.h">
+      <Filter>Header Files\Application\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Logo.h">
+      <Filter>Header Files\Application\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Player.h">
+      <Filter>Header Files\Application\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\PlayerBrain.h">
+      <Filter>Header Files\Application\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialSpritesAndText.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\IProgressState.h">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\Loading.h">
+      <Filter>Header Files\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialAudio.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialEffects.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="Application\TutorialParticle.h">
+      <Filter>Header Files\Application\Tutorials</Filter>
+    </ClInclude>
+    <ClInclude Include="XeFramework\ParticlesStream.h">
+      <Filter>Header Files\Framework\Graphics</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="XeFramework\BoolPool.inl">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </None>
+    <None Include="XeFramework\IItemsManager.inl">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </None>
+    <None Include="XeFramework\INamedItemsManager.inl">
+      <Filter>Header Files\Framework\Misc</Filter>
+    </None>
+    <None Include="XeFramework\Logger.inl">
+      <Filter>Header Files\Framework\Base</Filter>
+    </None>
+    <None Include="XeFramework\Singleton.inl">
+      <Filter>Header Files\Framework\Base</Filter>
+    </None>
+    <None Include="XeFramework\Stack.inl">
+      <Filter>Header Files\Framework\Base</Filter>
+    </None>
+    <None Include="XeFramework\AssetManager.inl">
+      <Filter>Header Files\Framework\Base</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,4 @@
+<Asset Type="Texture">
+	<Param Name="path" Value="data/textures/rocks.jpg" />
+	<Param Name="type" Value="image" />
+</Asset>

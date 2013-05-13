@@ -1,0 +1,4 @@
+<Asset Type="Effect">
+	<Param Name="vertPath" Value="data/effects/spriteBatch.vert" />
+	<Param Name="fragPath" Value="data/effects/kernel3x3.frag" />
+</Asset>

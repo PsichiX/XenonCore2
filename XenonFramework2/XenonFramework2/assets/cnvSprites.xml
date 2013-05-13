@@ -1,0 +1,7 @@
+<Asset Type="Canvas">
+	<Param Name="width" Value="1024" />
+	<Param Name="height" Value="576" />
+	<Param Name="depthMode" Value="true" />
+	<Param Name="clearOnActivate" Value="true" />
+	<Param Name="textureColorFilteringLevel" Value="1" />
+</Asset>

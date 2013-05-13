@@ -1,0 +1,31 @@
+<Asset Type="Material">
+	<Param Name="texture0Asset" Value="texRocksColor.xml" />
+	<Param Name="texture1Asset" Value="texRocksNormal.xml" />
+	<Param Name="effectAsset" Value="effSpriteBatchBumpDir.xml" />
+	<Group Name="properties">
+		<Group Name="in_Tex" Type="sampler2D">
+			<Param Name="unit" Value="0" />
+		</Group>
+		<Group Name="in_TexNormal" Type="sampler2D">
+			<Param Name="unit" Value="1" />
+		</Group>
+		<Group Name="in_Offset" Type="vec2">
+			<Param Name="x" Value="0.0" />
+			<Param Name="y" Value="0.0" />
+		</Group>
+		<Group Name="in_LightDir" Type="vec3">
+			<Param Name="x" Value="0.0" />
+			<Param Name="y" Value="0.0" />
+			<Param Name="z" Value="1.0" />
+		</Group>
+		<Group Name="in_Shadow" Type="float">
+			<Param Name="x" Value="0.75" />
+		</Group>
+		<Group Name="in_Specular" Type="float">
+			<Param Name="x" Value="0.1" />
+		</Group>
+		<Group Name="in_Shine" Type="float">
+			<Param Name="x" Value="20.0" />
+		</Group>
+	</Group>
+</Asset>

@@ -1,0 +1,11 @@
+<Asset Type="SpriteBatch">
+	<Param Name="capacity" Value="1000" />
+	<Group Name="camera">
+		<Param Name="x" Value="0" />
+		<Param Name="y" Value="0" />
+		<Param Name="width" Value="1024" />
+		<Param Name="height" Value="576" />
+		<Param Name="angle" Value="0" />
+	</Group>
+	<Param Name="canvasAsset" Value="cnvSprites.xml" />
+</Asset>

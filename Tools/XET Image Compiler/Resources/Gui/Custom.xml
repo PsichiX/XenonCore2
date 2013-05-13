@@ -1,0 +1,31 @@
+<Theme Name="Custom">
+
+	<Include File="Resources/Gui/Glass/Glass.xml" Theme="Glass" />
+	
+	<Style Name="TextActive">
+		<AreaColors>
+			<0 Value="1:1:1:0" />
+			<1 Value="1:1:1:0" />
+			<2 Value="1:1:1:0" />
+			<3 Value="1:1:1:0" />
+		</AreaColors>
+		<TextColor Value="1:1:1" />
+		<TextFont Name="Verdana" />
+		<TextScale Value="1:1" />
+		<TextHalign Mode="CENTER" />
+		<TextValign Mode="MIDDLE" />
+		<TextOffset Value="240:32" />
+		<TextBorder Color="0:0:0" Size="2" Quality="2" />
+	</Style>
+	
+	<Style Name="TextUnactive" Inherit="TextActive">
+		<TextColor Value="0.5:0.5:0.5" />
+	</Style>
+	
+
+	<Skin Name="Text">
+		<Style Control="AreaActive" Name="TextActive" />
+		<Style Control="AreaUnactive" Name="TextUnactive" />
+	</Skin>
+	
+</Theme>

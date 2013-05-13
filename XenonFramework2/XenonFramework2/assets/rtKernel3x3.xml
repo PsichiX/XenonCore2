@@ -1,0 +1,14 @@
+<Asset Type="RenderTechnique">
+	<Group Type="pass" Name="final">
+		<Param Name="textures" Value="1" />
+		<Param Name="effectAsset" Value="effSpriteBatchKernel3x3.xml" />
+		<Param Name="width" Value="0" />
+		<Param Name="height" Value="0" />
+		<Param Name="flipHorizontal" Value="false" />
+		<Param Name="flipVertical" Value="true" />
+		<Param Name="renderToCanvas" Value="false" />
+		<Group Name="textureBinds">
+			<Param Name="unit 0 from canvasAssetColorTexture" Value="cnvSprites.xml" />
+		</Group>
+	</Group>
+</Asset>

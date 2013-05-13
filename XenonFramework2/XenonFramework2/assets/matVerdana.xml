@@ -1,0 +1,4 @@
+<Asset Type="Material">
+	<Param Name="texture0Asset" Value="texVerdana.xml" />
+	<Param Name="effectAsset" Value="effSpriteBatchDefault.xml" />
+</Asset>

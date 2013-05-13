@@ -1,0 +1,5 @@
+<Asset Type="Material">
+	<Param Name="texture0Asset" Value="texPlayer.xml" />
+	<Param Name="effectAsset" Value="effSpriteBatchDefault.xml" />
+	<Param Name="alphaTestBorder" Value="0.5" />
+</Asset>

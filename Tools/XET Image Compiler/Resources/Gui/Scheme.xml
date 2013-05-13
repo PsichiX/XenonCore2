@@ -1,0 +1,7 @@
+<Root>
+	<Window Skin="Window" Name="MainWindow" Title="XET Image Compiler" Icon="MainIcon" Caption="On" ButtonClose="On" ButtonMin="On" Margin="0:8:8:8" EventProc="MainWindow" OnLoad="select parent ; set Size to variable WindowSize">
+		<Static Skin="Text" Name="Text" Position="0:0" Size="0:64" OnLoad="set Behaviour to flag DOCK_TO_CENTER ; add Behaviour to flag FIT_TO_EDGE_LEFT ; add Behaviour to flag FIT_TO_EDGE_RIGHT">XenoN Core\nXET Image Compiler</Static>
+		<Button Skin="Button" Name="File" Position="0:64" Size="480:64" EventProc="Button" OnLoad="set Extend to string 'file' ; set Behaviour to flag DOCK_TO_CENTER">Compile file</Button>
+		<Button Skin="Button" Name="Directory" Position="0:128" Size="480:64" EventProc="Button" OnLoad="set Extend to string 'directory' ; set Behaviour to flag DOCK_TO_CENTER">Compile directory</Button>
+	</Window>
+</Root>

@@ -1,0 +1,88 @@
+<Asset Type="RenderTechnique">
+	<Group Type="pass" Name="horizontal">
+		<Param Name="textures" Value="1" />
+		<Param Name="effectAsset" Value="effSpriteBatchBlurH.xml" />
+		<Param Name="width" Value="0" />
+		<Param Name="height" Value="0" />
+		<Param Name="flipHorizontal" Value="false" />
+		<Param Name="flipVertical" Value="true" />
+		<Param Name="renderToCanvas" Value="true" />
+		<Param Name="canvasColorFilteringLevel" Value="1" />
+		<Group Name="textureBinds">
+			<Param Name="unit 0 from canvasAssetColorTexture" Value="cnvSprites.xml" />
+		</Group>
+		<Group Name="properties">
+			<Group Name="in_Tex" Type="sampler2D">
+				<Param Name="unit" Value="0" />
+			</Group>
+			<Group Name="in_Size" Type="float">
+				<Param Name="x" Value="8" />
+			</Group>
+			<Group Name="in_Intensity" Type="float">
+				<Param Name="x" Value="1" />
+			</Group>
+			<Group Name="in_Scale" Type="float">
+				<Param Name="x" Value="2" />
+			</Group>
+		</Group>
+	</Group>
+	<Group Type="pass" Name="vertical">
+		<Param Name="textures" Value="1" />
+		<Param Name="effectAsset" Value="effSpriteBatchBlurV.xml" />
+		<Param Name="width" Value="0" />
+		<Param Name="height" Value="0" />
+		<Param Name="flipHorizontal" Value="false" />
+		<Param Name="flipVertical" Value="true" />
+		<Param Name="renderToCanvas" Value="true" />
+		<Param Name="canvasColorFilteringLevel" Value="1" />
+		<Group Name="textureBinds">
+			<Param Name="unit 0 from passCanvasColorTexture" Value="horizontal" />
+		</Group>
+		<Group Name="properties">
+			<Group Name="in_Tex" Type="sampler2D">
+				<Param Name="unit" Value="0" />
+			</Group>
+			<Group Name="in_Size" Type="float">
+				<Param Name="x" Value="8" />
+			</Group>
+			<Group Name="in_Intensity" Type="float">
+				<Param Name="x" Value="1" />
+			</Group>
+			<Group Name="in_Scale" Type="float">
+				<Param Name="x" Value="2" />
+			</Group>
+		</Group>
+	</Group>
+	<Group Type="pass" Name="final">
+		<Param Name="textures" Value="3" />
+		<Param Name="effectAsset" Value="effSpriteBatchDepthOfField.xml" />
+		<Param Name="width" Value="0" />
+		<Param Name="height" Value="0" />
+		<Param Name="flipHorizontal" Value="false" />
+		<Param Name="flipVertical" Value="true" />
+		<Param Name="renderToCanvas" Value="false" />
+		<Param Name="canvasColorFilteringLevel" Value="1" />
+		<Group Name="textureBinds">
+			<Param Name="unit 0 from canvasAssetColorTexture" Value="cnvSprites.xml" />
+			<Param Name="unit 1 from passCanvasColorTexture" Value="vertical" />
+			<Param Name="unit 2 from canvasAssetDepthTexture" Value="cnvSprites.xml" />
+		</Group>
+		<Group Name="properties">
+			<Group Name="in_TexDefault" Type="sampler2D">
+				<Param Name="unit" Value="0" />
+			</Group>
+			<Group Name="in_TexBlurred" Type="sampler2D">
+				<Param Name="unit" Value="1" />
+			</Group>
+			<Group Name="in_TexDepth" Type="sampler2D">
+				<Param Name="unit" Value="2" />
+			</Group>
+			<Group Name="in_Focus" Type="float">
+				<Param Name="x" Value="0.5" />
+			</Group>
+			<Group Name="in_Factor" Type="float">
+				<Param Name="x" Value="1.25" />
+			</Group>
+		</Group>
+	</Group>
+</Asset>

@@ -1,0 +1,4 @@
+<Asset Type="Effect">
+	<Param Name="vertPath" Value="data/effects/shapePoolAtmos.vert" />
+	<Param Name="fragPath" Value="data/effects/atmos.frag" />
+</Asset>
