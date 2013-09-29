@@ -1,0 +1,6 @@
+Thumbs.db
+*.sdf
+*.suo
+XenonFramework2/XenonFramework2/Debug
+XenonFramework2/XenonFramework2/Release
+*.vcxproj.user
